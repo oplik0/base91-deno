@@ -29,3 +29,12 @@ Run tests:
 ```bash
 deno test
 ```
+
+This project is using Deno built-in formatter. You can format your code using:
+```bash
+deno fmt
+```
+Or ensure it's following its rules with:
+```bash
+deno fmt --check
+```
