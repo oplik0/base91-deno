@@ -22,3 +22,4 @@ jobs:
         run: deno test
       - name: Check formatting
         run: deno fmt --check
+        if: "!contains(matrix.os, 'windows')"
