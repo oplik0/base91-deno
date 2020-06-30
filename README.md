@@ -1,5 +1,6 @@
 # base91-deno
 more space efficient encoding than base64
+
 [![Deno CI](https://github.com/oplik0/base91-deno/workflows/Deno%20CI/badge.svg)](https://github.com/oplik0/base91-deno/actions)
 
 ## Getting started
