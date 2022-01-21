@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { encode, decode } from "./base91.ts";
+import { decode, encode } from "./base91.ts";
 
 const encoder = new TextEncoder();
 const testCases = [
@@ -43,11 +43,11 @@ const testCases = [
     "ಬಾ ಇಲ್ಲಿ ಸಂಭವಿಸು ಇಂದೆನ್ನ ಹೃದಯದಲಿ",
     'J1QP,jREln;Kig<!^3pM,j_Dq<Fugg{$J1sL,j:Dq<Au5{C?r*Y|RB%AW^@(QPrnn25rhvJ1;OskKDpf`tggb%^30L,j8Dq<}ti;">20*$.sB',
   ],
-  // input that could trigger undefined 
+  // input that could trigger undefined
   [
     "\x8a\x04\x5a\x2a\x25\x5c\x23\x7d\x4a\x33\x64\x00\x65\x1a\x08",
-    "Yelt,de)Uz)OYvO\"LlgA"
-  ]
+    'Yelt,de)Uz)OYvO"LlgA',
+  ],
 ];
 
 Deno.test({
