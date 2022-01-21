@@ -21,7 +21,7 @@ export function encode(uint8: Uint8Array): string {
   for (let i = 0, len = uint8.length; i < len; i++) {
     queue |= uint8[i] << numbits;
     numbits += 8;
-    if (numbits >= 13) {
+    if (numbits > 13) {
       value = queue & 8191;
       if (value > 88) {
         queue >>= 13;
