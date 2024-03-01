@@ -9,7 +9,7 @@ more space efficient encoding than base64
 Encoding:
 
 ```ts
-import { encode } from "https://deno.land/x/base91/base91.ts";
+import { encode } from "https://deno.land/x/base91@v1.1.1/base91.ts";
 const encoder = new TextEncoder(); //converts utf-8 string to Uint8Array
 const input = encoder.encode("test"); //Uint8Array(4) [ 116, 101, 115, 116 ]
 const result = encode(input); //"fPNKd"
@@ -18,7 +18,7 @@ const result = encode(input); //"fPNKd"
 Decoding:
 
 ```ts
-import { decode } from "https://deno.land/x/base91/base91.ts";
+import { decode } from "https://deno.land/x/base91@v1.1.1/base91.ts";
 const decoder = new TextDecoder("utf-8"); //used to convert Uint8Array to utf-8 string
 const result = decode("fPNKd"); //Uint8Array(4) [ 116, 101, 115, 116 ]
 const output = decoder.decode(result); //"test"
