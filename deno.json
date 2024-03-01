@@ -1,0 +1,5 @@
+{
+  "name": "@opliko/base91",
+  "version": "1.1.0",
+  "exports": "./base91.ts"
+}

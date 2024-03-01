@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import { assertEquals } from "jsr:@std/assert@0.218.2";
 import { decode, encode } from "./base91.ts";
 
 const encoder = new TextEncoder();
